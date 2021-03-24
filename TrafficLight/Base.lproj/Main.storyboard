@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iH8-tD-tJS">
-                                <rect key="frame" x="135" y="16" width="50" height="50"/>
+                                <rect key="frame" x="135" y="60" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1M-QT-tf4">
-                                <rect key="frame" x="135" y="133" width="50" height="50"/>
+                                <rect key="frame" x="135" y="247" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwS-Gl-afY">
-                                <rect key="frame" x="135" y="261" width="50" height="50"/>
+                                <rect key="frame" x="135" y="445" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeB-eg-3T2">
-                                <rect key="frame" x="60" y="446" width="200" height="54"/>
+                                <rect key="frame" x="95" y="688" width="200" height="54"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="jV3-df-DGG"/>
@@ -39,7 +39,7 @@
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOl-fH-iZe"/>
+                                    <action selector="startsButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HwA-Mb-OG2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,7 +68,7 @@
                     <connections>
                         <outlet property="greenView" destination="vwS-Gl-afY" id="xk5-R9-Uap"/>
                         <outlet property="redView" destination="iH8-tD-tJS" id="VIW-7N-0VA"/>
-                        <outlet property="strartButton" destination="QeB-eg-3T2" id="D8X-y0-mRZ"/>
+                        <outlet property="strartButton" destination="QeB-eg-3T2" id="nyh-yC-mfv"/>
                         <outlet property="yellowView" destination="f1M-QT-tf4" id="1mH-TO-dh5"/>
                     </connections>
                 </viewController>

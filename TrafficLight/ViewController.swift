@@ -28,8 +28,13 @@ class ViewController: UIViewController {
         greenView.layer.cornerRadius = 60
     }
 
-    @IBAction func startButtonPressed(_ sender: UIButton) {
-    }
     
+    @IBAction func startsButtonPressed() {
+        strartButton.setTitle("NEXT", for: .normal)
+        
+        
+        
+    }
+        
 }
 
