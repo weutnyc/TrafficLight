@@ -21,11 +21,10 @@ class ViewController: UIViewController {
     @IBOutlet var greenView: UIView!
     @IBOutlet var strartButton: UIButton!
     
-    var alphaPoints = AlphaPoint.red
+    private var alphaPoints = AlphaPoint.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         strartButton.layer.cornerRadius = 10
         yellowView.alpha = 0.3
         redView.alpha = 0.3
