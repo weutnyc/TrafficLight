@@ -15,7 +15,6 @@ enum AlphaPoint {
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet var redView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var greenView: UIView!
@@ -29,16 +28,12 @@ class ViewController: UIViewController {
         yellowView.alpha = 0.3
         redView.alpha = 0.3
         greenView.alpha = 0.3
-        
-       
-        
     }
 
     override func viewWillLayoutSubviews() {
         yellowView.layer.cornerRadius = yellowView.layer.frame.height / 2
         redView.layer.cornerRadius = redView.layer.frame.height / 2
         greenView.layer.cornerRadius = greenView.layer.frame.height / 2
-        
     }
     
     @IBAction func startsButtonPressed() {
@@ -60,6 +55,5 @@ class ViewController: UIViewController {
             alphaPoints = .red
         }
     }
-        
 }
 
